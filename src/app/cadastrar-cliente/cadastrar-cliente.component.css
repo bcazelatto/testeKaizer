@@ -1,0 +1,9 @@
+.panel-heading{
+    font-size:150%;
+}
+.btn-success{
+    position: absolute; top:50%; left:131%
+}
+.btn-danger{
+    position: absolute; top:50%; left:140%
+}
