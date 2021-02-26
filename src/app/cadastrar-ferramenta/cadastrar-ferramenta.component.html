@@ -1,1 +1,64 @@
-<p>cadastrar-ferramenta works!</p>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>           
+
+
+<body>
+
+<form class="form-horizontal">
+    <h3>CADASTRO DE FERRAMENTAS</h3>
+    <div class="panel panel-primary">
+        
+        <div class="panel-body">
+            <div class="form-group">
+                <div class="col-md-11 control-label">
+                        <p class="help-block">* Campo Obrigatório
+                </div>
+            </div>
+
+            <!-- Nome do Produto-->
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="Produto">Nome do Produto*</label>  
+                <div class="col-md-4">
+                    <input id="Produto" name="Produto" placeholder="" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="Produto">Fabricante do Produto*</label>  
+                <div class="col-md-4">
+                    <input id="Produto" name="Produto" placeholder="" class="form-control input-md" required="" type="text">
+                </div>
+            </div>
+
+             <!-- Valor por tipo de porte-->
+            <label class="col-md-2 control-label" for="PqPorte">Pequeno Porte U$*</label>  
+            <div class="col-md-2">
+            <input id="PqPorte" name="PqPorte" type="text" placeholder="Digite o Valor" class="form-control input-md" required="">           
+            </div>
+
+            <label class="col-md-2 control-label" for="MdPorte">Médio Porte U$*</label>  
+            <div class="col-md-2">
+            <input id="MdPorte" name="MdPorte" type="text" placeholder="Digite o Valor" class="form-control input-md" required="">           
+            </div>
+
+            <label class="col-md-2 control-label" for="GdPorte">Grande Porte U$*</label>  
+            <div class="col-md-2">
+            <input id="GdPorte" name="GdPorte" type="text" placeholder="Digite o Valor" class="form-control input-md" required="">           
+            </div><br/><br/>
+
+
+            <div class="form-group">
+                <label class="col-md-2 control-label" for="Cadastrar"></label>
+                <div class="col-md-8">
+                  <button id="Cadastrar" onclick="cadastrar()" name="Cadastrar" class="btn btn-success" type="Submit">CADASTRAR</button>
+                  <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">LIMPAR</button>
+                  <button id="voltar" [routerLink]="['']" name="voltar" class="btn btn-warning" type="Voltar">VOLTAR</button><br/><br/>
+                </div>
+              </div>
+            
+        </div>
+    </div>
+
+</form>
+</body>

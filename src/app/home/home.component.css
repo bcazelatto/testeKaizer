@@ -1,5 +1,19 @@
-#buttom{
-    transform: translate(250%, -10%);
+#buttom1{
+    transform: translate(35%, -10%);
+    height:1in;
+    width: 2in;
+
+}
+
+#buttom2{
+    transform: translate(75%, -10%);
+    height:1in;
+    width: 2in;
+
+}
+
+.btn-primary{
+    background-color:rgb(110, 110, 165);
 }
 
 h2{

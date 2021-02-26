@@ -4,12 +4,13 @@
 
 
 <body>
-
 <form class="form-horizontal">
+    <h3>CADASTRO DE CLIENTE</h3>
     <div class="panel panel-primary">
                 
         <div class="panel-body">
             <div class="form-group">
+                
                 <div class="col-md-11 control-label">
                         <p class="help-block">* Campo Obrigatório
                 </div>
@@ -163,13 +164,15 @@
             <div class="form-group">
                 <label class="col-md-2 control-label" for="Cadastrar"></label>
                 <div class="col-md-8">
-                  <button id="Cadastrar" onclick="cadastrar()" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
-                  <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button>
+                  <button id="Cadastrar" onclick="cadastrar()" name="Cadastrar" class="btn btn-success" type="Submit">CADASTRAR</button>
+                  <button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">LIMPAR</button>
+                  <button id="voltar" [routerLink]="['']" name="voltar" class="btn btn-warning" type="Voltar">VOLTAR</button><br/>
                 </div>
               </div>
+
             </div>
         </div>
     </div>
-
+    <br/><br/>
 </form>
 </body>

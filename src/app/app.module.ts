@@ -3,29 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { CadastrarClienteComponent } from './cadastrar-cliente/cadastrar-cliente.component';
-import { CadastrarFerramentaComponent } from './cadastrar-ferramenta/cadastrar-ferramenta.component';
 import {ROUTES} from './app.routes'
-
-import { OrcamentoComponent } from './orcamento/orcamento.component';
-import { TelaConcluirOrcamentoComponent } from './tela-concluir-orcamento/tela-concluir-orcamento.component';
 import { HeaderComponent } from './header/header.component';
-import { BodyComponent } from './body/body.component';
 import { HomeComponent } from './home/home.component';
+
+import {GridModule, PagerModule} from '@syncfusion/ej2-angular-grids';
+import { CadastrarFerramentaComponent } from './cadastrar-ferramenta/cadastrar-ferramenta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CadastrarClienteComponent,
-    CadastrarFerramentaComponent,
-    OrcamentoComponent,
-    TelaConcluirOrcamentoComponent,
     HeaderComponent,
-    BodyComponent,
-    HomeComponent
+    HomeComponent,
+    CadastrarFerramentaComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    GridModule, PagerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
